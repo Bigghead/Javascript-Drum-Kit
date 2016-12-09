@@ -1,0 +1,12 @@
+.center{
+  margin: 25% auto;
+}
+
+
+.key{
+  border: 2px solid steelblue;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  margin:auto;
+}
