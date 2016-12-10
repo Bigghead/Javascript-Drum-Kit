@@ -62,7 +62,9 @@ document.onkeypress = function(event){
 
   for(var i = 0 ; i < keyButton.length; i ++){
 
-    if(keyObj[event.keyCode].code === keyButton[i].id){
+    if(keyObj[event.keyCode] !== undefined){
+
+      if(keyObj[event.keyCode].code === keyButton[i].id){
       var keyID = keyObj[event.keyCode].code;
       document.querySelector('#' + keyID).classList.toggle('playing');
       keyObj[event.keyCode].sound.play();
@@ -72,6 +74,7 @@ document.onkeypress = function(event){
         }, 200);
     }
    }
+  }
  } //end doc.onkeypress
 
 
