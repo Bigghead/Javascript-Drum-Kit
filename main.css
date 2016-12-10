@@ -23,7 +23,7 @@ body{
 }
 
 .playing{
-  transform: scale(1.5);
-  border-color: yellow;
-  box-shadow: 0 0 10px yellow;
+  transform: scale(1.5) rotate(180deg);
+  border-color: blue;
+  box-shadow: 0 0 20px blue;
 }
