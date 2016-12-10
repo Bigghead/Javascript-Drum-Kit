@@ -18,13 +18,12 @@ document.onkeypress = function(event){
     if(keyObj[event.keyCode] === keyButton[i].id){
       var keyID = keyObj[event.keyCode];
       document.querySelector('#' + keyID).classList.toggle('playing');
+      //document.querySelector('#' + keyID).classList.toggle('playing');
+      setTimeout(function(){
+        document.querySelector('#' + keyID).classList.toggle('playing');
+      }, 300);
     }
   }
  }
-
-
- keyButton[0].addEventListener('click', function(){
-   this.classList.toggle('playing');
- });
 
 });

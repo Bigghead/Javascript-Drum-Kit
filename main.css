@@ -18,11 +18,11 @@ body{
   height: 100px;
   color: white;
   margin:auto;
-  transition: all ease 0.7s;
+  transition: all ease 0.3s;
 }
 
 .playing{
-  transform: scale(1.1);
+  transform: scale(1.5);
   border-color: yellow;
   box-shadow: 0 0 10px yellow;
 }
